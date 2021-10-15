@@ -1,30 +1,21 @@
 import java.util.Scanner;
 public class JavaBasic2 {
-
-    public static void main(String[] args) {
-      int nilai; 
-
-     Scanner skor = new Scanner(System.in);
-    
-        System.out.println("Masukan skor anda;");
-        nilai = skor.nextInt();
-
-        if(nilai>=100) {
-            System.out.println("Nilai salah");
-        }else if(nilai>=91) {
-            System.out.println("Nilai anda A");
-        }else if(nilai>=76) {
-            System.out.println("Nilai anda B"); 
-        }else if(nilai>=51) {
-            System.out.println("Nilai anda C"); 
-        }else if(nilai>=26) {
-            System.out.println("Nilai anda D"); 
-        }else {
-            System.out.println("Nilai anda E");
-        }
-        System.out.println("SELESAI");
-
-         }
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+        int nilai = 100;
+        if(nilai >= 0 && nilai <= 25){
+            System.out.println("Nilai Anda : E");
+        } else if (nilai >= 26 && nilai <= 50){
+            System.out.println("Nilai Anda : D");
+        } else if (nilai >= 51 && nilai <= 75){
+            System.out.println("Nilai Anda : C");
+        } else if (nilai >= 76 && nilai <= 90){
+            System.out.println("Nilai Anda : B");
+        } else if (nilai >= 91 && nilai <= 100){
+            System.out.println("Nilai Anda : A");
+        } else if (nilai >= 100){
+            System.out.println("Nilai Invalid");
+        
+     }
     }
-
-   
+}
